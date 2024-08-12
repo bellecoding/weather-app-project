@@ -5,41 +5,48 @@
     <meta name="viewport" content="width=<1>, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Noto+Serif+Khitan+Small+Script&display=swap');
+
 </style>
 </head>
 <body>
-    <div class="weather-app">
+     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city" required />
-            <input type="submit" value ="Search"/>
-        </form>
+    <form class="search-form">
+        <input type="submit" value ="Search" class="search-form-button"/>
+            <input  
+            type="search" 
+            placeholder="Enter a city name" 
+            required 
+            class="search-form-input"/>
+    </form>
     </header>
-    <div class="weather-app">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/760/original/minimalist-purple-mountains-sunset-wallpaper.jpg?1723466186"/>
     <main>
-        <div>
-    <div class="current-data">☀️ 35°C</div>
-    <h1>Paris</h1>
-    <p>
-        Tuesday 14:15, sunny
+    <div class="container">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/138/760/original/minimalist-purple-mountains-sunset-wallpaper.jpg?1723466186"/>
+
+    <div class="icon">☀️</div>
+     <div class="text-1">
+        35°C </div>
+     <div class ="line"></div>
+    <div class = "text-2">Paris, France </div>
+    <p class="text-3"> 14:15
         <br />
-        </div>
+        Monday </p>
+        </div> 
+    
       <div class="current-details"> Humidity: 25%, Sunset: 21:10
         <br /> 
         Wind: 4.12km/h , Sunrise: 06:40 
         </div> 
     </p>
-    </div>
     
     </main>
-
-
+</div>
     <footer>
-        This project was coded by <a href="https://github.com/bellecoding" target="_blank"> Bella </a> code hosted on  <a href="https://github.com/bellecoding/weather-app-project" target="_blank">GitHub</a> and website hosted on <a href="https://isabellasweatherapp.netlify.app" target="_blank">Netlify</a>
-        </footer>
-        </div>
+        This project was coded by <a href="https://github.com/bellecoding" target="_blank"> Bella</a> code hosted on  <a href="https://github.com/bellecoding/weather-app-project" target="_blank">GitHub</a> and website hosted on <a href="https://isabellasweatherapp.netlify.app" target="_blank">Netlify</a>
+    </footer>
 </body>
 </html>
