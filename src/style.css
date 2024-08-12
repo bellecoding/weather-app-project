@@ -1,0 +1,26 @@
+body {
+    background-color: #e4e0fa;
+    font-family: "Noto Serif Khitan Small Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img {
+
+ width: 950px;
+ height: 350px;
+ opacity: 0.5;
+ box-shadow: 10px 10px 20px rgba(77, 32, 161, 0.4);
+ border-radius: 16px;
+}
+.weather-app{
+    background-color: #fdfdfd;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 10px 10px 20px rgba(218, 200, 251, 0.4);
+    border-radius: 16px;
+    
+}
+.current-details {
+
+}
