@@ -71,32 +71,55 @@ header {
   border-top: 1px solid #C5A9BC;
 }
 .icon {
-    position: absolute;
+  position: absolute;
   left: 16px;
-  font-size: 30px;
-  bottom: 110px;
+  font-size: 40px;
+  bottom: 190px;
 }
 .text-1 {
  position: absolute;
   left: 16px;
-  font-size: 80px;
-  bottom: -50px;
+  font-size: 100px;
+  bottom: -20px;
   
 }
 .text-2 {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   left: 16px;
+  font-size: 40px;
+}
+.country {
+  position: absolute;
+  bottom: 0px;
+  left: 16px ;
   font-size: 30px;
 }
 .text-3 {
   position: absolute;
   line-height: 25px;
-  bottom: 20px;
+  bottom: 50px;
+  right: 60px;
+  font-size: 30px;
+
+}
+.week-day{
+  position: absolute;
+  line-height: 25px;
+  bottom: 130px;
+  right: 43px;
+  font-size: 30px;
+  
+}
+.description {
+  position: absolute;
+  line-height: 25px;
+  bottom: 35px;
   right: 20px;
   font-size: 25px;
+
 }
- 
+
 a {
   color: #3a192f;
 }
