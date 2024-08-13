@@ -105,7 +105,7 @@ color: #bd91af; }
 
 
 .current-details {
-  border: 1px solid #DCC4D6;
+  border: 1px groove #DCC4D6;
   border-radius: 10px;
   background-color: white;
   margin-top: 10px;
@@ -118,8 +118,9 @@ color: #bd91af; }
 }
 .table-2 {
   width:41%;
-  border: 1px solid #DCC4D6;
+  border: 3px groove rgba(197, 169, 188, 0.3);
   border-radius: 10px;
+  
   background-color: #C5A9BC;
   margin-top: 20px;
   color: white;
@@ -135,16 +136,17 @@ color: #bd91af; }
   border: 1px solid #DCC4D6;
   border-radius: 10px;
   background-color: white;
-  margin-top: -237px;
+  margin-top: -242px;
   margin-left: 350px;
-  padding: 0px 0 78px 0;
+  padding: 0px 0 87px 0;
   text-align: center;
 }
 footer {
   text-align: center;
   font-size: 15px;
+  margin-top:20px;
   margin-right: 10px;
-  margin-left: 200px;
+  margin-left: auto;
   color: #C5A9BC;
  direction: ltr;
   

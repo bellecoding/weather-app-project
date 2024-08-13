@@ -54,13 +54,15 @@
 <body>
      <div class="weather-app">
     <header>
-    <form class="search-form">
+    <form class="search-form" id="search-form">
         <input type="submit" value ="Search" class="search-form-button"/>
             <input  
             type="search" 
             placeholder="Enter a city name" 
             required 
-            class="search-form-input"/>
+            class="search-form-input"
+            id="search-form-input"
+            />
     </form>
     </header>
     <main>
@@ -71,7 +73,7 @@
      <div class="text-1">
         35°C </div>
      <div class ="line"></div>
-    <div class = "text-2">Paris, France </div>
+    <div class = "text-2" id="city">Paris, France </div>
     <p class="text-3">&nbsp <strong> 14:15</strong>
         <br />
         Monday </p>
@@ -125,10 +127,10 @@ clear_day
 
     </table>
     <footer>
-        This project was coded by <a href="https://github.com/bellecoding" target="_blank"> Isabella</a> code hosted on  <a href="https://github.com/bellecoding/weather-app-project" target="_blank">GitHub</a> and website hosted on <a href="https://isabellasweatherapp.netlify.app" target="_blank">Netlify</a>
+        This project was coded by <a href="https://github.com/bellecoding" target="_blank"> Isabella.</a> Code hosted on  <a href="https://github.com/bellecoding/weather-app-project" target="_blank">GitHub</a> and website hosted on <a href="https://isabellasweatherapp.netlify.app" target="_blank">Netlify</a>
     </footer>
     </main>
 </div>
-    
+    <script src="src/index.js" ></script>
 </body>
 </html>
