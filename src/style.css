@@ -1,16 +1,22 @@
+
 body {
-  background-color: #e4e0fa;
+  background-color: #fce8e5;
   font-family: "Noto Serif Khitan Small Script", serif;
   font-weight: 400;
   font-style: normal;
   padding: 15px;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 100px;
 }
 
 img {
   width: 100%;
   height: 350px;
   opacity: 0.5;
-  box-shadow: 1px 18px 20px 11px rgba(204, 182, 245, 0.8);
+  box-shadow: -1px 1px 22px 3px rgba(245, 169, 159, 0.9);
   border-radius: 16px;
   border: none;
 
@@ -19,13 +25,13 @@ header {
   padding:  10px 0 30px 0;
 }
 .weather-app {
-  background-color: #fdfdfd;
+  background-color: #fcf4f9;
   max-width: 800px;
   margin: 55px auto;
   padding-right: 30px;
-  padding-bottom: 200px;
+  padding-bottom: 0px;
   padding-left: 30px;
-  box-shadow: 0px 0px 20px 14px rgba(218, 200, 251, 0.2);
+  box-shadow: -1px 1px 22px 1px rgba(242, 174, 165, 0.6);
   border-radius: 16px;
   margin-top: 0;
   margin-bottom: none;
@@ -37,7 +43,7 @@ header {
   direction: rtl;
 }
 .search-form-input {
-  background-color: #e4e0fa;
+  background-color: #fae9e7;
   border: none;
   border-radius: 6px;
   width: 30%;
@@ -47,31 +53,34 @@ header {
 }
 .search-form-button {
   direction: rtl;
-  background-color: #e4e0fa;
+  background-color: #fae9e7;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
-  color: black;
+  color: #908593;
   font-size: 16px;
 }
 .container {
   position: relative;
-  color: rgb(17, 4, 4);
+  color:white;
+}
+::placeholder {
+  color: #908593;
 }
 .line {
-  border-top: 1px solid #e4e0fa;
+  border-top: 1px solid #C5A9BC;
 }
 .icon {
     position: absolute;
   left: 16px;
   font-size: 30px;
-  bottom: 78px;
+  bottom: 110px;
 }
 .text-1 {
  position: absolute;
   left: 16px;
-  font-size: 50px;
-  bottom: 0px;
+  font-size: 80px;
+  bottom: -50px;
   
 }
 .text-2 {
@@ -87,13 +96,56 @@ header {
   right: 20px;
   font-size: 25px;
 }
-.current-details {
-}
+ 
 a {
-  color: purple;
+  color: #3a192f;
+}
+.material-symbols-outlined {
+color: #bd91af; }
+
+
+.current-details {
+  border: 1px solid #DCC4D6;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 10px;
+  box-shadow: 12px 13px 17px 9px rgba(250, 233, 231, 0.6);
+  color: #342a36;
+  width: 41%;
+  text-align: center;
+  
+   
+}
+.table-2 {
+  width:41%;
+  border: 1px solid #DCC4D6;
+  border-radius: 10px;
+  background-color: #C5A9BC;
+  margin-top: 20px;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  
+}
+.rain {
+  color:rgb(17, 131, 42);
+}
+.table-3 {
+  width: 56%;
+  border: 1px solid #DCC4D6;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: -237px;
+  margin-left: 350px;
+  padding: 0px 0 78px 0;
+  text-align: center;
 }
 footer {
   text-align: center;
   font-size: 15px;
-  padding-top: 2px;
+  margin-right: 10px;
+  margin-left: 200px;
+  color: #C5A9BC;
+ direction: ltr;
+  
 }
