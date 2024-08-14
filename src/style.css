@@ -1,3 +1,36 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Noto+Serif+Khitan+Small+Script&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+  
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  #342a36;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 body {
   background-color: #fce8e5;
@@ -82,7 +115,6 @@ header {
   left: 16px;
   font-size: 100px;
   bottom: -20px;
-  
 }
 .text-2 {
   position: absolute;
@@ -102,7 +134,6 @@ header {
   bottom: 50px;
   right: 65px;
   font-size: 30px;
-
 }
 .week-day{
   position: absolute;
@@ -110,7 +141,7 @@ header {
   bottom: 130px;
   right: 20px;
   font-size: 30px;
-  
+
 }
 .description {
   position: absolute;
@@ -118,7 +149,6 @@ header {
   bottom: 35px;
   right: 23px;
   font-size: 25px;
-
 }
 
 a {
@@ -126,7 +156,6 @@ a {
 }
 .material-symbols-outlined {
 color: #bd91af; }
-
 
 .current-details {
   border: 1px groove #DCC4D6;
@@ -137,8 +166,7 @@ color: #bd91af; }
   color: #342a36;
   width: 41%;
   text-align: center;
-  
-   
+
 }
 .table-2 {
   width:41%;
@@ -150,7 +178,7 @@ color: #bd91af; }
   color: white;
   line-height: 25px;
   font-size: 18px;
-  
+
 }
 .rain {
   color:rgb(17, 131, 42);
@@ -173,5 +201,4 @@ footer {
   margin-left: auto;
   color: #C5A9BC;
  direction: ltr;
-  
 }
