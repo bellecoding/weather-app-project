@@ -12,11 +12,11 @@ body {
   bottom: 100px;
 }
 
-img {
+ .background-image {
   width: 100%;
   height: 350px;
   opacity: 0.5;
-  box-shadow: -1px 1px 22px 3px rgba(245, 169, 159, 0.9);
+  box-shadow: -1px 1px 22px 3px rgba(245, 169, 159, 0.8);
   border-radius: 16px;
   border: none;
 
@@ -73,8 +73,9 @@ header {
 .icon {
   position: absolute;
   left: 16px;
-  font-size: 40px;
-  bottom: 190px;
+   width: 70px;
+   height: 70px;
+   bottom: 230px;
 }
 .text-1 {
  position: absolute;
@@ -99,7 +100,7 @@ header {
   position: absolute;
   line-height: 25px;
   bottom: 50px;
-  right: 60px;
+  right: 65px;
   font-size: 30px;
 
 }
@@ -107,7 +108,7 @@ header {
   position: absolute;
   line-height: 25px;
   bottom: 130px;
-  right: 43px;
+  right: 20px;
   font-size: 30px;
   
 }
@@ -115,7 +116,7 @@ header {
   position: absolute;
   line-height: 25px;
   bottom: 35px;
-  right: 20px;
+  right: 23px;
   font-size: 25px;
 
 }

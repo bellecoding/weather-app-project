@@ -9,6 +9,7 @@ function refreshWeather(response) {
     let timeElement = document.querySelector("#time");
     let weekDayElement = document.querySelector("#week-day");
     let date = new Date (response.data.time * 1000);
+    let iconElement = document.querySelector("#icon");
 
     countryElement.innerHTML = response.data.country; 
     weekDayElement.innerHTML = formatDate(date);
@@ -18,6 +19,7 @@ function refreshWeather(response) {
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     windSpeedElement.innerHTML = ` ${response.data.wind.speed}km/h`;
     temperatureElement.innerHTML = `${temperature}°C`;
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -26,11 +28,11 @@ function formatDate(date) {
 
    let day = days [date.getDay()];
 
-  if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-
-   return `${day}`;
+       if (minutes < 10) {
+         minutes = `0 ${minutes}`;
+       }
+ 
+   return `${day}`; 
 }
 
 
