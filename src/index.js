@@ -20,7 +20,10 @@ function refreshWeather(response) {
     windSpeedElement.innerHTML = ` ${response.data.wind.speed}km/h`;
     temperatureElement.innerHTML = `${temperature}°C`;
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
+
+    getForecast(response.data.city);
 }
+
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
@@ -31,14 +34,13 @@ function formatDate(date) {
        if (minutes < 10) {
          minutes = `0 ${minutes}`;
        }
- 
    return `${day}`; 
 }
-
 
 function searchCity(city) {
 let apiKey = "ddafb333ff3taa6005d55d473416odb3";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -50,35 +52,46 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
-function displayForecast () {
-   let forecastElement = document.querySelector("#forecast");
-  
-   let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+function getForecast (city) {
+    let apiKey = "ddafb333ff3taa6005d55d473416odb3";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`; 
+    axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast (response) {
    let forecastHtml = "";
+  
+   let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+   
 
    days.forEach(function (day) {
-   forecastHtml = 
-   forecastHtml +
-   `
-  <div class="weather-forecast-day">
-    <div class="weather-forecast-date">${day}</div>
-    <div class="weather-forecast-icon">☀️</div>
-    <div class="weather-forecast-temperatures">
-    <div class="weather-forecast-temperature">
-        <strong>16</strong>
-    </div>
-    <div class="weather-forecast-temperature">9</div>
-  </div>
-</div>
+   forecastHtml =
+     forecastHtml +
+`
+  <table class="weather-forecast">
+  <tr>
+    <th class="weather-forecast-date">${day} </th> 
+    </tr>
+    <tr>
+    <td class="weather-forecast-icon">☀️</td> 
+    </tr>
+    <tr>
+    <td class="weather-forecast-temperature"><strong>16º</strong>&nbsp9º</td>
+  </tr>
+</table>
+
 `;
+   
    });
+
+   let forecastElement = document.querySelector("#forecast");
    forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris");
+searchCity("Lisbon");
 displayForecast();
  
 
