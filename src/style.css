@@ -14,7 +14,6 @@
   'wght' 400,
   'GRAD' 0,
   'opsz' 24,
-  
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -140,7 +139,7 @@ header {
   position: absolute;
   line-height: 25px;
   bottom: 130px;
-  right: 50px;
+  right: 40px;
   font-size: 30px;
 
 }
@@ -165,8 +164,7 @@ color: #bd91af; }
   margin-top: 10px;
   box-shadow: 12px 13px 17px 9px rgba(250, 233, 231, 0.6);
   color: #342a36;
-  width: 42%;
-  
+  width: 43%;
 
 }
 .table-2 {
@@ -188,11 +186,11 @@ color: #bd91af; }
   border: 1px solid #DCC4D6;
   border-radius: 10px;
   background-color: white;
-  margin-top: -226px;
+  margin-top: -150px;
   margin-left: 355px;
   padding: 0px 0 21px 0;
   text-align: center;
-   line-height: 35px;
+  line-height: 35px;
    color: #352738;
 }
 
@@ -200,12 +198,12 @@ color: #bd91af; }
 display:flex;
 justify-content: space-between;
 width: 54%;
- margin-top: -220px;
+ margin-top: -225px;
  margin-left: 350px;
  margin-right:-500px;
  line-height: 60px;
-margin-bottom: -80px;
-padding-bottom: 10px;
+margin-bottom: -100px;
+padding-bottom: 15px;
 background-color: white;
 
 }
